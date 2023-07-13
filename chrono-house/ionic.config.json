@@ -1,0 +1,7 @@
+{
+  "name": "Chrono House",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
