@@ -1,10 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Register
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
+<!-- jorge luis sepulveda abreu
+  2020-10714 -->
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -13,5 +16,31 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-item-group>
+
+    <!-- <ion-item>
+      <ion-input
+        label="Titulo:"
+        labelPlacement="stacked"
+        [clearOnEdit]="true"
+        placeholder="Enter tittle"
+      >
+      </ion-input>
+    </ion-item> -->
+
+    <ion-input label="Titulo:" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
+    <ion-input type="date" label="Fecha:" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
+    <ion-input label="Descripcion:" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
+
+    <!-- <ion-button color="secondary" (click)="takePicture()">
+      Take Picture
+    </ion-button> -->
+
+    <ion-button color="secondary">
+      <ion-icon slot="start" name="add" ></ion-icon>
+      Add
+    </ion-button>
+
+  </ion-item-group>
+
 </ion-content>
