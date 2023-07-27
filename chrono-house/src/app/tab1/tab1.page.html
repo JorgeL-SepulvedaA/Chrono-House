@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Register
+      Registrar
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -32,14 +32,31 @@
     <ion-input type="date" label="Fecha:" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
     <ion-input label="Descripcion:" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
 
+    <ion-item>
+      <ion-label>Imagen:</ion-label>
+      <ion-input type="file" placeholder="Enter text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>para tomar foto.</ion-label>
+      <ion-icon name="camera" size="large" slot="start"></ion-icon>
+    </ion-item>
+
     <!-- <ion-button color="secondary" (click)="takePicture()">
       Take Picture
     </ion-button> -->
 
-    <ion-button color="secondary">
-      <ion-icon slot="start" name="add" ></ion-icon>
-      Add
-    </ion-button>
+    <ion-item>
+      <ion-label>para grabar audio.</ion-label>
+      <ion-icon name="mic" size="large" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-button color="secondary">
+        <ion-icon slot="start" name="add"></ion-icon>
+        Add
+      </ion-button>
+    </ion-item>
 
   </ion-item-group>
 
